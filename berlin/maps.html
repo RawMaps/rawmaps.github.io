@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#2A2A2A"><title>rawmaps · Abriendo mapa...</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,sans-serif;background:#F8F5F0;height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:32px;text-align:center}.pin{width:48px;height:48px;border-radius:50% 50% 50% 0;background:#FFBA08;transform:rotate(-45deg);animation:bob .9s ease-in-out infinite;margin:0 auto}@keyframes bob{0%,100%{transform:rotate(-45deg) translateY(0)}50%{transform:rotate(-45deg) translateY(-8px)}}p{font-size:15px;color:#71717A;line-height:1.6;max-width:260px}a{color:#FFBA08;font-weight:600;text-decoration:none}.back{position:fixed;top:20px;left:16px;display:flex;align-items:center;gap:6px;background:#fff;border:1px solid rgba(0,0,0,.1);border-radius:100px;padding:8px 14px 8px 10px;font-size:13px;font-weight:600;color:#1A1A1A;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.08)}.back svg{width:16px;height:16px}</style>
+</head><body>
+<a class="back" href="javascript:history.back()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg> Volver</a>
+<div class="pin"></div><p>Abriendo el mapa...<br><br>Si no se abre, <a id="fl" href="">pulsa aquí</a>.</p>
+<script>const p=new URLSearchParams(location.search),d=p.get('url');const fl=document.getElementById('fl');if(d){fl.href=d;window.location.replace(d);}else window.location.replace('https://www.google.com/maps/d/viewer?mid=1X8Vi6RumK_RdHXYYM5Wt0egEi-8WUqc');</script>
+</body></html>
