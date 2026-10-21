@@ -1,8 +1,8 @@
 {
   "name": "RawMaps",
   "short_name": "RawMaps",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#141512",
